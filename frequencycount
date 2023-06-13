@@ -1,0 +1,66 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Character Frequency Counter</title>
+  <script>
+    function countCharacterFrequency() {
+      var inputString = document.getElementById("inputString").value;
+      var frequencyCount = {};
+
+      // Loop through each character in the input string
+      for (var i = 0; i < inputString.length; i++) {
+        var char = inputString.charAt(i);
+        
+        // Check if character already exists in the frequencyCount object
+        if (frequencyCount[char]) {
+          // Increment the count for the character
+          frequencyCount[char]++;
+        } else {
+          // Initialize the count for the character to 1
+          frequencyCount[char] = 1;
+        }
+      }
+
+      // Display the frequency count
+      var output = "";
+      for (var char in frequencyCount) {
+        output += char + ": " + frequencyCount[char] + "<br>";
+      }
+      document.getElementById("output").innerHTML = output;
+    }
+  </script>
+</head>
+<body>
+  <h1>Character Frequency Counter</h1>
+  <label for="inputString">Enter a string:</label>
+  <input type="text" id="inputString">
+  <button onclick="countCharacterFrequency()">Count Frequency</button>
+  <br><br>
+  <div id="output"></div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let str="skjhfiadhf";
+    let obj={};
+    for(let i=0 ; i<str.length ; i++){
+      if(obj[str[i]]==undefined){
+        obj[str[i]]=1;
+      }
+      else{
+        obj[str[i]]+=1;
+      }
+    }
+    console.log(obj);
+  </script>
+</body>
+</html>
